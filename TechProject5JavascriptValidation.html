@@ -1,0 +1,66 @@
+<!-- This is the document type declaration showing that it is an HTML document -->
+<!DOCTYPE html>
+<!-- This is where the document itself begins -->
+<html>
+
+<!-- This head element contains meta information about the html page -->
+<head>
+<!-- This element shows the title of the page -->
+<title>Customer Information Form</title>
+<!-- This line links to a style sheet located in the same folder as the current page -->
+<link rel="stylesheet" href="formstyle2.css">
+
+<!-- If a form field is empty, the function validateForm() alerts a message, and returns false, to prevent the form from being submitted -->
+<!-- Below is the HTML form validation done in JavaScript -->
+<script>
+function validateForm() {
+  var x = document.forms["customerInformationForm"]["fname"].value;
+  if (x == "") {
+    alert("First name must be filled out!");
+    return false;
+  }
+  var x = document.forms["customerInformationForm"]["lname"].value;
+  if (x == "") {
+    alert("Last name must be filled out!");
+    return false;
+  }
+  var x = document.forms["customerInformationForm"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out!");
+    return false;
+  }
+}
+</script>
+</head>
+
+<!-- This is a body tag and it is the part that is visible on the web page -->
+<body>
+
+<!-- These are the heading tags to my HTML document of importance h1 showing it is of high importance -->
+<h1>Daniel Perdomo & Co. - Customer Information Form</h1>
+
+<!-- This is a paragraph tag -->
+<p>Please enter your first name/last name/email and click Submit Data.<br>
+If you made a mistake, please click Reset to clear your information and start over.</p>
+
+<!-- This is the HTML form element used to create a form to recieve user input -->
+<!-- Also, the funcion validateForm() is called if any of the fields are empty -->
+<form name="customerInformationForm" onsubmit="return validateForm()">
+    <!-- This line creates the label for entering your first name -->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="20" autofocus><br>
+    <!-- This line creates the label for entering your last name -->
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" size="20"><br>
+    <!-- This line creates the label for entering your email -->
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" size="20"><br><br>
+    <!-- This line defines the Submit Data button on the HTML form -->
+    <input type="submit" value="Submit Data">
+    <!-- This line creates the Reset button on the HTML form -->
+    <input type="reset">
+</form>
+
+</body>
+<!-- This is where the document ends -->
+</html>
