@@ -1,0 +1,39 @@
+input[type=text] {
+  width: 55%; /* This line sets the horizontal width for the text field to 55% */
+  padding: 10px 10px; /* This line sets the padding or space around an elements contents */
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", Courier, monospace; /* This line sets the font family for the text field */
+  font-size: 14px; /* This line sets the font size to 14 for the text field */
+}
+input[type=text]:focus {
+  background-color: powderblue; /* Set text field background color to powderblue */
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50; /* This line sets the background color to #4CAF50 for the button */
+  border: none;/* This line sets the border for the button */
+  color: white; /* This line sets the font color to white for the button */
+  padding: 16px 32px; /* This line sets the padding or space around an elements contents */
+  text-decoration: none;
+  margin: 4px 2px; /* This line sets the margin for the button */
+  width: 27%; /* This line sets the horizontal width to 27% for the button */
+  cursor: pointer; /* This line sets the cursor type to pointer when hovering over the button */
+  font-family: "Lucida Console", Courier, monospace; /* This line sets the font family for the button */
+  font-size: 16px; /* This line sets the font size to 16 for the button */
+}
+body {
+  background-color: black; /* Set the body background color to black */
+  color: #4CAF50; /* Set the body font color to #4CAF50 */
+  font-family: "Lucida Console", Courier, monospace; /* This line sets the font family for the body */
+  font-size: 14px; /* Set the font size to 14 for the body */
+}
+p {
+  color: white; /* Set the paragraph element font color to white */
+  font-family: "Lucida Console", Courier, monospace; /* This line sets the font family for the paragraph */
+  font-size: 14px; /* Set the font size to 14 for the paragraph */
+}
+h1 {
+  color: #4CAF50; /* Set the heading 1 font color to #4CAF50 */
+  font-family: "Lucida Console", Courier, monospace; /* This line sets the font family for heading 1 */
+  font-size: 24px; /* Set the font size to 24 for heading 1 */
+}
